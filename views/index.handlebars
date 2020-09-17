@@ -32,10 +32,3 @@
   <button type="submit">Add Burgers</button>
 </form>
 
-<script>
-  $("button").on("click", function() {
-  const id = $(this).attr("id") 
-  console.log(id)
-  $.ajax({method: "PUT", url:"/api/burgers/" + id})
-  })
-</script>
